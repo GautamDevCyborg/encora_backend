@@ -46,9 +46,9 @@ export const signin = async (req, res, next) => {
       secure: true
     };
 
-    // if (process.env.NODE_ENV === 'production') {
-    //   cookieOptions.domain = '.encoraaaa.vercel.app';
-    // }
+    if (process.env.NODE_ENV === 'production') {
+      cookieOptions.domain = process.env.FRONTEND_URL;
+    }
 
     res
       .cookie('access_token', token, cookieOptions)
