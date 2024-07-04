@@ -26,7 +26,7 @@ const app = express();
 
 
 const corsOptions = {
-  origin: 'http://localhost:3000', // Replace with your frontend URL
+  origin: 'https://encora-frontend.vercel.app', // Replace with your frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow methods you intend to use
   allowedHeaders: ['Content-Type', 'Authorization'], // Allow headers you intend to use
   credentials: true // Allow sending cookies and other credentials
